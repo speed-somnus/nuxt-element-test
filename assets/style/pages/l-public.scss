@@ -1,0 +1,230 @@
+@import "variable";
+
+
+
+
+.red{
+  color:$red;
+}
+.yellow{
+  color:$yellow;
+}
+.brown{
+  color:$brown;
+}
+.gray{
+  color:$gray;
+}
+.gray-1{
+  color:$gray-1;
+}
+.gray-9{
+  color:$gray-9;
+}
+.green{
+  color:$green;
+}
+.blue{
+  color:$blue;
+}
+.orange{
+  color:$orange;
+}
+body{
+  // background-color:#e6e9f0;
+  min-width: 1000px;
+}
+
+
+.checkbox{
+
+  text-align: center;
+}
+
+td{
+  -webkit-user-select: text;  /* Chrome all / Safari all /opera15+*/  
+  -moz-user-select: text;     /* Firefox all */  
+  -ms-user-select: text;      /* IE 10+ */  
+  user-select: text;  
+}
+
+html,body{height:100%;}
+@font-face {font-family: "iconfont";
+    //src: url(../font/iconfont-full.ttf) format('truetype'); 
+}
+@mixin l-bg-image($images:'index/1.jpg',$left:0,$top:0) {
+  background-image:url(../src/assets/images/#{$images});
+  background-position:$left $top;
+}
+
+@mixin noRepeat-bg-image($images:'index/1.jpg',$left:0,$top:0) {
+  background-image:url(../src/assets/images/#{$images});
+  background-position:$left $top;
+  background-repeat: no-repeat;
+}
+@mixin l-xh($num:2) {
+  text-overflow: ellipsis;
+  overflow:hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:before,
+.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+
+.fl{
+  float:left;
+}
+
+.fr{
+  float: right;
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.text-error{
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  overflow: hidden;
+}
+[v-cloak] { display: none }
+
+
+.line{
+  display:block;
+  width:100%;
+  border-top:1px #ececec solid;
+}
+
+
+
+
+.centerd{//fixed居中
+  position:fixed;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+    /* background:red; */
+  }
+.center{//相对父元素居中
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+
+}
+
+.centerX{//相对父元素水平居中
+    position:absolute;
+    top:0;
+    left:50%;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    -ms-transform:translateX(-50%);
+    -o-transform:translateX(-50%);
+
+}
+
+
+
+
+
+input[type="text"],input[type="password"]{
+  padding: 0 10px;
+  box-sizing:border-box;
+}
+
+
+.shadeMark{//遮罩层
+
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 110;
+
+    .popup{//弹窗 
+
+      background: #fff;
+      border-radius: 5px;
+        position:absolute;
+      top:30%;
+      left:50%;
+      -webkit-transform:translate(-50%,-50%);
+      -moz-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+      -o-transform:translate(-50%,-50%);
+
+
+    }
+
+
+
+}
+
+/* 三角 */
+
+
+.triangle{
+  display: inline-block;
+  width:0; height:0;
+  overflow:hidden;
+  cursor: pointer;
+
+}
+.triangle_up{//上三角
+
+  border-left:8px solid transparent; 
+  border-right:8px solid transparent; 
+  border-bottom:8px solid gray;
+
+}
+
+.triangle_left{
+  
+  border-top:8px solid transparent; 
+  border-bottom:8px solid transparent; 
+  border-right:8px solid gray;
+
+}
+
+.triangle_right{
+  
+  border-top:8px solid transparent; 
+  border-bottom:8px solid transparent; 
+  border-left:8px solid gray;
+
+}
+
+
+.triangle_down{//下三角
+  
+  border-left:8px solid transparent; 
+  border-right:8px solid transparent; 
+  border-top:8px solid gray;
+
+}
+
+
+
