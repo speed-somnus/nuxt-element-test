@@ -3,7 +3,8 @@
     <head-top signin-up='home'>
       <span slot='logo' class="head_logo"  @click="reload">ele.me</span>
     </head-top>
-    <div class="div1">测试</div>
+    <div class="div1">测试2</div>
+    <el-button type="primary">主要按钮</el-button>
     <div>
       <nuxt-link :to="'/test'" class="guess_city">go test index</nuxt-link>
     </div>

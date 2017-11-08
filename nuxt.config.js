@@ -28,6 +28,7 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
+  css: ['element-ui/lib/theme-chalk/index.css'],
   /*
   ** Build configuration
   */
@@ -45,9 +46,15 @@ module.exports = {
       //   })
       // }
     },
-    vendor: [ '~/plugins/fetch/fetch', '~/plugins/axios/axios']
+    vendor: [
+      '~/plugins/fetch/fetch',
+      '~/plugins/axios/axios',
+      'element-ui'
+    ]
     // proxy: {
     //   '/api': { target: 'http://cangdu.org:8001', ws: false }
     // }
-  }
+  },
+  plugins: ['~plugins/element-ui']
+  
 }

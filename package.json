@@ -6,7 +6,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
-    "nuxt": "latest"
+    "element-ui": "^2.0.3",
+    "nuxt": "latest",
+    "vue": "^2.5.3",
+    "vue-server-renderer": "^2.5.3",
+    "vue-template-compiler": "^2.5.3"
   },
   "scripts": {
     "dev": "nuxt",
